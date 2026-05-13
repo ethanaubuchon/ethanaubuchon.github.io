@@ -14,7 +14,7 @@ RUN bundle install
 
 COPY . .
 
-RUN jekyll build
+RUN bundle exec jekyll build
 RUN mkdir -p /var/www/html && ln -s /usr/src/app/_site /var/www/html/_site
 
 EXPOSE 80/tcp
