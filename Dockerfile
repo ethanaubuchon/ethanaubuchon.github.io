@@ -1,4 +1,4 @@
-FROM ruby:latest
+FROM ruby:3.4
 
 RUN apt -y update && apt install -y nginx
 
